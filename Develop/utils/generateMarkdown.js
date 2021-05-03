@@ -10,11 +10,109 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+//function to generate markdown for README
+function generateMarkdown(userInput, userInfo) {
+  let tableOfContents = `## Table of Contents`;
 
+  if (userInput.installation !== "") { tableOfContents += `
+  * [Installation] (#installation)` };
+  
+  if (userInput.usage !== "") { tableOfContents += `
+  * [Usage] (#usage)` };
+
+  if (userInput.contributing !== "") { tableOfContents += `
+  * [Contributing] (#contributing)` };
+
+  if (userInput.tests !== "") { tableOfContents += `
+  * [Tests] (#tests)` };
+
+  let draftMarkdown =
+  `# ${userInput.title}
+  
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userInput.username}/${userInput.repository}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userInput.username}/${userInput.repository}?style=flat&logo=appveyor)
+  
+
+  ## Description
+
+  ${userInput.description}
+`
+
+draftMarkdown += tableOfContents;
+
+draftMarkdown += `
+* [License] (#license)`;
+
+if (userInput.installation !== "") {
+
+  draftMarkdown +=
+  `
+  ## Installation
+
+  *How to install project:*
+
+  ${userInput.installation}`
+};
+
+if (userInput.usage !== "") {
+
+  draftMarkdown +=
+
+  `
+  ## Usage
+
+  *How to use:*
+
+  ${userInput.usage}`
+};
+
+if (userInput.contributing !== "") {
+`
+## Contributing
+
+*If you would like to contribute to this project, please follow these guidelines:*
+
+${userInput.contributing}`
+};
+
+if (userInput.tests !== "") {
+
+  draftMarkdown +=
+  `
+  ## Tests
+
+  *Tests for this application:*
+
+  ${userInput.tests}`
+};
+
+draftMarkdown +=
+`
+## License
+
+${userInput.license}`;
+
+let draftDev =
+`
+---
+## Questions?
+
+![Developer Profile Pic] ${userInfo.avatar_url})
+
+Questions or comments? Plesae contact me at:
+
+GitHub: [@${userInfo.login}](${userInfo.url})
 `;
+
+if (userInfo.email !== null) {
+  draftDev +=
+  `
+  Email: ${userInfo.email}
+  `};
+
+  draftMarkdown += draftDev;
+
+  return draftMarkdown;
 }
 
 module.exports = generateMarkdown;
+

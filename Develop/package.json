@@ -1,14 +1,15 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application that allows users to dynamically create a README file via the Command Line",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Danny Cheever",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "inquirer": "^6.3.1"
   }
 }
