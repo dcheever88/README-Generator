@@ -29,16 +29,20 @@ function generateMarkdown(userInput, userInfo) {
   ## Table of Contents`;
 
   if (userInput.installation !== "") { tableOfContents += `
-    * [Installation] (#installation)` };
+    *   ${installation(userInput.installation)}
+  ` };
   
   if (userInput.usage !== "") { tableOfContents += `
-    * [Usage] (#usage)` };
+    *   ${usage(userInput.usage)}
+  ` };
 
   if (userInput.contributing !== "") { tableOfContents += `
-    * [Contributing] (#contributing)` };
+    *   ${contributing(userInput.contributing)}
+  ` };
 
   if (userInput.tests !== "") { tableOfContents += `
-    * [Tests] (#tests)` };
+    *   ${tests(userInput.tests)}
+  ` };
 
   let draftMarkdown =
   `# ${userInput.title}
