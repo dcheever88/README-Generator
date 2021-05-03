@@ -5,7 +5,7 @@
 
   ## Description
 
-  A command line markdown-style README generator
+  A command line Markdown-style README GENERATOR
 
   ## Table of Contents
     
@@ -27,12 +27,17 @@
 
   *How to install project:*
 
-  Please install inquirer and fs to best utilize this application
+  Please install inquirer and fs to utilize this application
   ## Usage
 
   *How to use:*
 
-  Please view accompanying video for further instructions and examples!
+  Please view the accompanying video at https://drive.google.com/file/d/1SjnkxjvXqlIEa_ZFpQNgq1PYSzqZcF7E/view for a how-to!
+  ## Contributing
+
+  *If you would like to contribute to this project, please follow these guidelines:*
+
+  Please feel free to contribute to and improve this application!
   ## Tests
 
   *Tests for this application:*

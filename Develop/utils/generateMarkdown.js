@@ -81,12 +81,15 @@ if (userInput.usage !== "") {
 };
 
 if (userInput.contributing !== "") {
+
+  draftMarkdown +=
+
 `
-## Contributing
+  ## Contributing
 
-*If you would like to contribute to this project, please follow these guidelines:*
+  *If you would like to contribute to this project, please follow these guidelines:*
 
-${userInput.contributing}`
+  ${userInput.contributing}`
 };
 
 if (userInput.tests !== "") {
