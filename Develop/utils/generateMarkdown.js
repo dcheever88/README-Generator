@@ -33,13 +33,13 @@ function generateMarkdown(userInput, userInfo) {
     \n* [Installation](#installation)\n` };
   
   if (userInput.usage !== "") { tableOfContents += `
-    * [Usage](#usage)` };
+    \n* [Usage](#usage)\n` };
 
   if (userInput.contributing !== "") { tableOfContents += `
-    * [Contributing](#contributing)` };
+    \n* [Contributing](#contributing)\n` };
 
   if (userInput.tests !== "") { tableOfContents += `
-    * [Tests](#tests)` };
+    \n* [Tests](#tests)\n` };
 
   let draftMarkdown =
   `# ${userInput.title}
@@ -55,7 +55,7 @@ function generateMarkdown(userInput, userInfo) {
 draftMarkdown += tableOfContents;
 
 draftMarkdown += `
-    * [License] (#license)`;
+    \n* [License] (#license)\n`;
 
 if (userInput.installation !== "") {
 
