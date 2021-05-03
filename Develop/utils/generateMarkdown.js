@@ -110,18 +110,12 @@ let draftDev =
 -----------------
   ## Questions?
 
-![Developer Profile Pic] (${userInfo.avatar_url})
-
 Questions or comments? Please contact me at:
 
 GitHub: [@${userInfo.login}](${userInfo.url})
-`;
 
-if (userInfo.email !== null) {
-  draftDev +=
-  `
-  Email: ${userInfo.email}
-  `};
+
+Email: ${userInput.email}`;
 
   draftMarkdown += draftDev;
 

@@ -78,6 +78,11 @@ const questions = [
         message: "Choose a license for your project",
         choices: ["MIT License", "GNU GPLv3", "Mozilla Public License 2.0", ""],
         name: "license"
+    },
+    {
+        type: "input",
+        message: "Please enter your email address",
+        name: "email"
     }
 ];
 
