@@ -106,7 +106,7 @@ draftMarkdown +=
 
   *This application is covered under:*
 
-${userInput.license}`;
+  ${userInput.license}`;
 
 let draftDev =
 `
