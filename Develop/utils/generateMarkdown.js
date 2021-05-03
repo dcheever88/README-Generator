@@ -26,23 +26,20 @@ function renderLicenseSection(license) {
 //function to generate markdown for README
 function generateMarkdown(userInput, userInfo) {
   let tableOfContents = `
-  ## Table of Contents`;
+  ## Table of Contents`
+  ;
 
   if (userInput.installation !== "") { tableOfContents += `
-    *   ${installation(userInput.installation)}
-  ` };
+    * [Installation] (#installation)` };
   
   if (userInput.usage !== "") { tableOfContents += `
-    *   ${usage(userInput.usage)}
-  ` };
+    * [Usage] (#usage)` };
 
   if (userInput.contributing !== "") { tableOfContents += `
-    *   ${contributing(userInput.contributing)}
-  ` };
+    * [Contributing] (#contributing)` };
 
   if (userInput.tests !== "") { tableOfContents += `
-    *   ${tests(userInput.tests)}
-  ` };
+    * [Tests] (#tests)` };
 
   let draftMarkdown =
   `# ${userInput.title}
