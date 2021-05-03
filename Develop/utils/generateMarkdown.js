@@ -27,19 +27,19 @@ function renderLicenseSection(license) {
 function generateMarkdown(userInput, userInfo) {
   let tableOfContents = `
   ## Table of Contents`
-  ;
+  
 
   if (userInput.installation !== "") { tableOfContents += `
-    * [Installation] (#installation)` };
+    * [Installation](#installation)` };
   
   if (userInput.usage !== "") { tableOfContents += `
-    * [Usage] (#usage)` };
+    * [Usage](#usage)` };
 
   if (userInput.contributing !== "") { tableOfContents += `
-    * [Contributing] (#contributing)` };
+    * [Contributing](#contributing)` };
 
   if (userInput.tests !== "") { tableOfContents += `
-    * [Tests] (#tests)` };
+    * [Tests](#tests)` };
 
   let draftMarkdown =
   `# ${userInput.title}
