@@ -1,11 +1,11 @@
-# asdfdsaf
+# README-Generator
   
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/dcheever88/dsafdsa?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/dcheever88/dsafdsa?style=flat&logo=appveyor)
+  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/dcheever88/README-Generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/dcheever88/README-Generator?style=flat&logo=appveyor)
   
 
   ## Description
 
-  sadfdsaf
+  A command line markdown-style README generator
 
   ## Table of Contents
     
@@ -13,6 +13,9 @@
 
     
 * [Usage](#usage)
+
+    
+* [Contributing](#contributing)
 
     
 * [Tests](#tests)
@@ -24,22 +27,22 @@
 
   *How to install project:*
 
-  asdfsdaf
+  Please install inquirer and fs to best utilize this application
   ## Usage
 
   *How to use:*
 
-  asdfds
+  Please view accompanying video for further instructions and examples!
   ## Tests
 
   *Tests for this application:*
 
-  asdfds
+  N/A
   ## License
 
   *This application is covered under:*
 
-  MIT License
+  Mozilla Public License 2.0
 -----------------
   ## Questions?
 
@@ -48,4 +51,4 @@ Questions or comments? Please contact me at:
 GitHub: [@dcheever88](https://api.github.com/users/dcheever88)
 
 
-Email: dfadsf
+Email: cheeverdanny@gmail.com
