@@ -23,9 +23,6 @@
     
 * [License](#License)
 
-    
-* [License] (#license)
-
   ## Installation
 
   *How to install project:*
@@ -35,7 +32,7 @@
 
   *How to use:*
 
-  dsaf
+  asdf
   ## Tests
 
   *Tests for this application:*
@@ -52,4 +49,4 @@ Questions or comments? Please contact me at:
 GitHub: [@dcheever88](https://api.github.com/users/dcheever88)
 
 
-Email: sadfa
+Email: asdf

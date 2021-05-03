@@ -57,9 +57,6 @@ function generateMarkdown(userInput, userInfo) {
 
 draftMarkdown += tableOfContents;
 
-draftMarkdown += `
-    \n* [License] (#license)\n`;
-
 if (userInput.installation !== "") {
 
   draftMarkdown +=
