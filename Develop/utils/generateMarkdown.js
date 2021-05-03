@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license != "") {
-    return `n* [License] (#license)n`;
+    return `\n* [License] (#license)\n`;
   } return "";
 }
 
@@ -30,7 +30,7 @@ function generateMarkdown(userInput, userInfo) {
   
 
   if (userInput.installation !== "") { tableOfContents += `
-    * [Installation](#installation)` };
+    \n* [Installation](#installation)\n` };
   
   if (userInput.usage !== "") { tableOfContents += `
     * [Usage](#usage)` };
