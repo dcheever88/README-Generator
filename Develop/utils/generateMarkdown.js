@@ -112,7 +112,7 @@ let draftDev =
 
 ![Developer Profile Pic] (${userInfo.avatar_url})
 
-Questions or comments? Plesae contact me at:
+Questions or comments? Please contact me at:
 
 GitHub: [@${userInfo.login}](${userInfo.url})
 `;
