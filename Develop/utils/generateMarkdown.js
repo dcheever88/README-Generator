@@ -41,6 +41,9 @@ function generateMarkdown(userInput, userInfo) {
   if (userInput.tests !== "") { tableOfContents += `
     \n* [Tests](#tests)\n` };
 
+  if (userInput.license !== "") { tableOfContents += `
+    \n* [License](#License)\n`};
+
   let draftMarkdown =
   `# ${userInput.title}
   

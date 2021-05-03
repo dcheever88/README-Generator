@@ -21,6 +21,9 @@
 * [Tests](#tests)
 
     
+* [License](#License)
+
+    
 * [License] (#license)
 
   ## Installation
@@ -32,12 +35,12 @@
 
   *How to use:*
 
-  dfas
+  dsaf
   ## Tests
 
   *Tests for this application:*
 
-  adsfasf
+  asdf
   ## License
 
 MIT License
@@ -49,4 +52,4 @@ Questions or comments? Please contact me at:
 GitHub: [@dcheever88](https://api.github.com/users/dcheever88)
 
 
-Email: dsafdsf
+Email: sadfa
