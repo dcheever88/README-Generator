@@ -1,30 +1,44 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license != "none") {
+    return `![GitHub license] (https://img.shields.io/badge/license-${license}-blue.svg)`;
+  } return "";
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license != "") {
+    return `n* [License] (#license)n`;
+  } return "";
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license != "none") {
+    return `## License
+    This application is covered under the ${license} license.`;
+  } return "";
+}
 
 //function to generate markdown for README
 function generateMarkdown(userInput, userInfo) {
-  let tableOfContents = `## Table of Contents`;
+  let tableOfContents = `
+  ## Table of Contents`;
 
   if (userInput.installation !== "") { tableOfContents += `
-  * [Installation] (#installation)` };
+    * [Installation] (#installation)` };
   
   if (userInput.usage !== "") { tableOfContents += `
-  * [Usage] (#usage)` };
+    * [Usage] (#usage)` };
 
   if (userInput.contributing !== "") { tableOfContents += `
-  * [Contributing] (#contributing)` };
+    * [Contributing] (#contributing)` };
 
   if (userInput.tests !== "") { tableOfContents += `
-  * [Tests] (#tests)` };
+    * [Tests] (#tests)` };
 
   let draftMarkdown =
   `# ${userInput.title}
@@ -40,7 +54,7 @@ function generateMarkdown(userInput, userInfo) {
 draftMarkdown += tableOfContents;
 
 draftMarkdown += `
-* [License] (#license)`;
+    * [License] (#license)`;
 
 if (userInput.installation !== "") {
 
@@ -87,16 +101,16 @@ if (userInput.tests !== "") {
 
 draftMarkdown +=
 `
-## License
+  ## License
 
 ${userInput.license}`;
 
 let draftDev =
 `
----
-## Questions?
+-----------------
+  ## Questions?
 
-![Developer Profile Pic] ${userInfo.avatar_url})
+![Developer Profile Pic] (${userInfo.avatar_url})
 
 Questions or comments? Plesae contact me at:
 
